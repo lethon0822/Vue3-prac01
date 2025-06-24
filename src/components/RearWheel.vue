@@ -8,7 +8,7 @@ const counterStore = useCounterStore();
     <div class="rear-wheel">
         <span>REAR WHEEL</span>
         <Tire color="Green"/>
-        <div>TIMES: {{ useCounterStore.count }}</div>
+        <div>TIMES: {{ counterStore.count }}</div>
     </div>
 </template>
 

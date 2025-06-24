@@ -1,6 +1,7 @@
 <script setup>
 import Tire from '@/components/Tire.vue'
 import { useCounterStore } from '@/stores/counter.js';
+// useConterStore()가 return 해주는 것들이 넘어옴
 const counterStore = useCounterStore();
 </script>
 
@@ -8,7 +9,7 @@ const counterStore = useCounterStore();
     <div class="front-wheel">
         <span>FRONT WHEEL</span>
         <Tire color="Red "/>
-        <div>TIMES: {{ useCounterStore.count }}</div>
+        <div>TIMES: {{ counterStore.count }}</div>
     </div>
 </template>
 
